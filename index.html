@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Am I Alive?</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column; /* Stack title and iframe vertically */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0; /* Remove default body margin */
+            background-color: #928c8c; /* Optional background for the page */
+        }
+        .widget-container {
+            /* You might want to add padding or specific dimensions here */
+            /* depending on how you want it to look */
+            padding: 20px;
+        }
+        iframe {
+            /* Removes the default border around the iframe */
+            border: none;
+            /* Optional: add box-shadow for visual separation if needed */
+            /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>am i alive?</h1>
+
+    <div class="widget-container">
+        <iframe
+            src="https://app.hyperate.io/c8d45e?fontFamily=Arial&size=50&font-color=%23ebebeb&background-color=transparent&brand=false&heartColor=%2364eefb&enableFlicker=false&enable_sounds=true&volume=100&minimum_heart_rate=50"
+            width="300" /* Adjust width as needed */
+            height="150" /* Adjust height as needed */
+            title=""
+            allow="autoplay" /* Might be needed if sounds are enabled in the widget */
+            >
+            <!-- Fallback content if iframe is not supported -->
+            Your browser does not support iframes. Please visit the link directly.
+        </iframe>
+    </div>
+
+    <p style="margin-top: 20px; font-size: 0.9em; color: #555;">
+        tap to hear sound
+    </p>
+
+</body>
+</html>
